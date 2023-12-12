@@ -3,7 +3,7 @@
 dive="false"
 action="install"
 
-. <(wget -qO- http://-/Utils/raw/branch/main/bashbuilder/colors.sh) --
+. <(wget -qO- https://raw.githubusercontent.com/semalis/utils/master/bashbuilder/colors.sh) --
 
 function option_value() { 
         echo "$1" | sed -e 's%^--[^=]*=%%g; s%^-[^=]*=%%g';
@@ -71,7 +71,6 @@ function uninstall() {
 while test $# -gt 0; do
 	case "$1" in
 	-h|--help)
-		. <(wget -qO- http://-/Utils/raw/branch/main/bashbuilder/logo.sh)
 		echo
 		echo -e "${C_LGn}Functionality${RES}: the script installs or uninstalls Docker"
 		echo

@@ -1,17 +1,9 @@
 docker:
 ```bash
-. <(wget -qO- http://-/Utils/raw/branch/main/Installers/docker.sh)
-```
-go:
-```bash
-. <(wget -qO- http://-/Utils/raw/branch/main/Installers/golang.sh)
+. <(wget -qO- https://raw.githubusercontent.com/semalis/utils/master/Installers/docker.sh)
 ```
 rust:
 ```bash
-. <(wget -qO- http://-/Utils/raw/branch/main/Installers/rust.sh)
+. <(wget -qO- https://raw.githubusercontent.com/semalis/utils/master/Installers/rust.sh)
 ```
 
-tinyproxy:
-```bash
-. <(wget -qO- http://-/Utils/raw/branch/main/Installers/tinyproxy.sh)
-```

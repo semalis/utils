@@ -4,13 +4,11 @@ function="install"
 nightly="false"
 
 # Options
-. <(wget -qO- http://-/Utils/raw/branch/main/bashbuilder/colors.sh) --
+. <(wget -qO- https://raw.githubusercontent.com/semalis/utils/master/bashbuilder/colors.sh) --
 option_value(){ echo "$1" | sed -e 's%^--[^=]*=%%g; s%^-[^=]*=%%g'; }
 while test $# -gt 0; do
 	case "$1" in
 	-h|--help)
-		. <(wget -qO- http://-/Utils/raw/branch/main/bashbuilder/logo.sh)
-
 		echo
 		echo -e "${C_LGn}Functionality${RES}: the script installs or uninstalls Rust"
 		echo
@@ -21,9 +19,6 @@ while test $# -gt 0; do
 		echo -e "  -n, --nightly    install nightly version of Rust"
 		echo -e "  -u, --uninstall  uninstall Rust"
 		echo
-		echo -e "${C_LGn}Useful URLs${RES}:"
-		echo -e "Script URL: http://-/Utils/raw/branch/main/Installers/rust.sh"
-		echo -e "https://www.rust-lang.org/tools/install — Rust installation"
 		echo
 		return 0 2>/dev/null; exit 0
 		;;

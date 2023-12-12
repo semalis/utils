@@ -68,7 +68,7 @@ function option_value(){
 while test $# -gt 0; do
 	case "$1" in
 	-h|--help)
-		. <(wget -qO- http://-/Utils/raw/branch/main/bashbuilder/colors.sh)
+		. <(wget -qO- https://raw.githubusercontent.com/semalis/utils/master/bashbuilder/colors.sh)
 		echo
 		echo -e "${C_LGn}Functionality${RES}: the script assigns variables with colors to be used in the texts (e.g."
 		echo -e "in the 'echo' and 'printf' commands)"
@@ -126,7 +126,7 @@ while test $# -gt 0; do
 		echo -e "└────────┴─────────┴──────────┘  └────────┴─────────┴──────────┘"
 		echo
 		echo -e "${C_LGn}Useful URLs${RES}:"
-		echo -e "Script URL: http://-/Utils/raw/branch/main/bashbuilder/colors.sh"
+		echo -e "Script URL: https://raw.githubusercontent.com/semalis/utils/master/bashbuilder/colors.sh"
 		echo
 		return 0 2>/dev/null; exit 0
 		;;
